@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap; /* instructs the browser to use the fallback font to display the text until the custom font has fully downloaded. */
+  src: url("/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/manrope/static/Manrope-Bold.ttf");
+}

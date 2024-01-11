@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap; /* instructs the browser to use the fallback font to display the text until the custom font has fully downloaded. */
+  src: url("/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/manrope/static/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/manrope/static/Manrope-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+h4 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+p {
+  font-family: "Manrope", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: white;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 3;
+  padding: 0 16px;
+}
+
+.purple-bg,
+.light-purple-bg,
+.spiral-one,
+.spiral-two,
+.spiral-three {
+  position: absolute;
+  z-index: 0;
+}
+
+.purple-bg {
+  top: 0;
+  z-index: 1;
+}
+
+.light-purple-bg {
+  top: 392px;
+}
+
+.spiral-one, .spiral-two, .spiral-three {
+  z-index: 2;
+}
+
+@media (max-width: 375px) {
+  .spiral-one, .spiral-two, .spiral-three {
+    display: none;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 68px;
+}
+
+.logo {
+  width: 5.98513rem;
+  height: 1.538rem;
+  flex-shrink: 0;
+}
+
+.btn {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 200% */
+  letter-spacing: -0.16px;
+  padding: 5px 0;
+}
+
+.btn-primary {
+  border: 2px solid hsl(150, 100%, 63%);
+  background-color: hsl(150, 100%, 63%);
+  color: hsl(273, 85%, 13%);
+}
+
+.btn-primary:hover {
+  color: hsl(150, 100%, 63%);
+  background-color: hsl(273, 85%, 13%);
+}
+
+.btn-secondary {
+  border-bottom: 2px solid hsl(150, 100%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-secondary:hover {
+  color: hsl(150, 100%, 63%);
+}
+
+.hero .hero-title {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding-bottom: 40px;
+}
+.hero .hero-title .highlight {
+  text-decoration: underline;
+  text-decoration-color: hsl(150, 100%, 63%);
+  text-decoration-thickness: 3px;
+}
+.hero .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .cta .cta-btn {
+  width: 133px;
+  height: 55px;
+  margin-bottom: 64px;
+}
+.hero .cta .phone {
+  width: 320px;
+  height: 184px;
+  margin-bottom: 69px;
+}
+
+.benefits {
+  text-align: center;
+}
+.benefits .benefit {
+  margin-bottom: 40px;
+}
+.benefits .benefit-number {
+  width: 48px;
+  height: 46px;
+  border-radius: 30.5px;
+  border: 1px solid hsl(271, 12%, 34%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(273, 85%, 13%);
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.benefits .benefit-title {
+  margin-bottom: 16px;
+  color: hsl(273, 85%, 13%);
+}
+.benefits .benefit-description {
+  color: hsl(271, 12%, 34%);
+}
+
+/*# sourceMappingURL=styles.css.map */

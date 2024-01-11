@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.hero {
+  .hero-title {
+    color: $white;
+    text-align: center;
+    padding-bottom: 40px;
+
+    .highlight {
+      text-decoration: underline;
+      text-decoration-color: $eucaplyptus;
+      text-decoration-thickness: 3px;
+    }
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cta-btn {
+      width: 133px;
+      height: 55px;
+      margin-bottom: 64px;
+    }
+
+    .phone {
+      width: 320px;
+      height: 184px;
+      margin-bottom: 69px;
+    }
+  }
+}

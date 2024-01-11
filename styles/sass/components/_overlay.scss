@@ -1,0 +1,27 @@
+.purple-bg,
+.light-purple-bg,
+.spiral-one,
+.spiral-two,
+.spiral-three {
+  position: absolute;
+  z-index: 0;
+}
+
+.purple-bg {
+  top: 0;
+  z-index: 1;
+}
+
+.light-purple-bg {
+  top: 392px;
+}
+
+.spiral-one, .spiral-two, .spiral-three {
+    z-index: 2;
+}
+
+@media (max-width: 375px) {
+    .spiral-one, .spiral-two, .spiral-three {
+        display: none;
+    }
+}
