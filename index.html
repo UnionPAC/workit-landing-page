@@ -1,49 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <title>Workit</title>
+  </head>
+  <body>
+    <div class="dark-purple-bg">
+      <div class="dark-purple-curve">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="light-purple-bg">
+      <div class="light-purple-curve">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Workit landing page</title>
-</head>
-<body>
-
-  Apply for access
-
-  Data tailored to your needs.
-
-  Learn more
-  
-  1
-
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
-
-  2
-
-  Data-driven decisions
-
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
-
-  3
-
-  Always affordable
-
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
-
-  Be the first to test
-
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
-
-  Apply for access
-
-</body>
+    <div class="container">
+      <header>
+        <img
+          src="./assets/images/logo-light.svg"
+          alt="Workit Logo"
+          class="logo"
+        />
+        <nav>
+          <a href="#" class="btn btn-secondary">Apply for access</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <h1 class="hero-title">
+            Data
+            <span class="highlight">tailored</span> to your needs.
+          </h1>
+          <button class="btn btn-primary hero-btn">Learn more</button>
+          <img
+            src="./assets/images/image-hero.webp"
+            alt="Phone showing financial app dashboard"
+            width="200"
+            class="phone"
+          />
+        </section>
+        <section class="benefits">
+          <ul>
+            <li class="benefit">
+              <div class="benefit-number">1</div>
+              <div class="benefit-content">
+                <h3 class="benefit-title">Actionable insights</h3>
+                <p class="benefit-description">
+                  Optimize your products, improve customer satisfaction and stay
+                  ahead of the competition with our product data analytics.
+                </p>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit-number">2</div>
+              <div class="benefit-content">
+                <h3 class="benefit-title">Data-driven decisions</h3>
+                <p class="benefit-description">
+                  Make data-driven decisions with our product data analytics.
+                  Our AI-generated reports help you unlock insights hidden in
+                  your product data.
+                </p>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit-number">3</div>
+              <div class="benefit-content">
+                <h3 class="benefit-title">Always affordable</h3>
+                <p class="benefit-description">
+                  Always affordable pricing that scales with your business. Get
+                  top-quality product data analytics services without hidden
+                  costs or unexpected fees.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="founder-message">
+          <img
+            src="./assets/images/image-founder.webp"
+            alt="Louis Graham"
+            width="200"
+          />
+          <div class="message-container">
+            <h2 class="message-title">Be the first to test</h2>
+            <p class="message-content">
+              Hi, I'm Louis Graham, the founder of the company. Book a demo call
+              with me to become a beta tester for our app and kickstart your
+              company. Apply for access below and I’ll be in touch to schedule a
+              call.
+            </p>
+            <button class="btn btn-primary">Apply for access</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <img src="./assets/images/logo-dark.svg" alt="Workit Logo" class="footer-logo" />
+        <ul class="socials">
+          <li>
+            <a href="#"
+              ><img src="./assets/images/icon-facebook.svg" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/icon-twitter.svg" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/icon-instagram.svg" alt="Facebook"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
