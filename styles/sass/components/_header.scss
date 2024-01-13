@@ -1,14 +1,15 @@
+@use "../abstracts" as *;
+
 header {
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 68px;
-}
+  margin-bottom: 4rem;
 
-.logo {
-  width: 5.98513rem;
-  height: 1.538rem;
-  flex-shrink: 0;
+  .logo {
+    width: 95.762px;
+    height: 24.608px;
+  }
 }

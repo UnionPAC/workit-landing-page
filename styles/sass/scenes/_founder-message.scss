@@ -1,0 +1,90 @@
+@use "../abstracts" as *;
+
+.founder-message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  img {
+    width: 281px;
+    height: 281px;
+    margin: 0 auto;
+    margin-bottom: -52px;
+  }
+
+  .message-container {
+    background-color: $dark-purple;
+    color: $white;
+    text-align: center;
+    padding: 32px 31px 16px;
+    margin-bottom: 74px;
+  }
+
+  .message-title {
+    margin-bottom: 16px;
+  }
+
+  .message-content {
+    margin-bottom: 24px;
+  }
+
+  button {
+    width: 172px;
+    height: 55px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 700px) {
+  .founder-message {
+    max-width: 689px;
+    img {
+      margin: 10px;
+      align-self: flex-start;
+      margin-bottom: -112px;
+    }
+    .message-container {
+      max-width: 514px;
+      align-self: flex-end;
+      text-align: left;
+      margin-bottom: 80px;
+      padding: 0 64px;
+
+      .message-title {
+        margin-bottom: 24px;
+        margin-top: 32px;
+      }
+    }
+    button {
+      width: 190px;
+      height: 61px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .founder-message {
+    max-width: 1114px;
+    img {
+      width: 477px;
+      height: 477px;
+      margin-bottom: -320px;
+    }
+    .message-container {
+      max-width: 730px;
+
+      .message-title {
+        margin-top: 42px;
+        margin-bottom: 32px;
+      }
+      .message-content {
+        margin-bottom: 32px;
+      }
+    }
+    button {
+      margin-bottom: 64px;
+    }
+  }
+}

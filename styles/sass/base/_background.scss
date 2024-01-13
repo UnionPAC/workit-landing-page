@@ -1,0 +1,87 @@
+@use "../abstracts" as *;
+
+.dark-purple-bg {
+  background-color: $dark-purple;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 448px;
+  z-index: 1;
+}
+
+.dark-purple-curve {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.dark-purple-curve svg {
+  position: relative;
+  display: block;
+  width: calc(283% + 1.3px);
+  height: 72px;
+}
+
+.dark-purple-curve .shape-fill {
+  fill: $dark-purple;
+}
+
+.light-purple-bg {
+  background-color: $ghost-white;
+  position: absolute;
+  top: 392px;
+  left: 0;
+  width: 100%;
+  height: 1070px;
+}
+
+.light-purple-curve {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.light-purple-curve svg {
+  position: relative;
+  display: block;
+  width: calc(283% + 1.3px);
+  height: 72px;
+}
+
+.light-purple-curve .shape-fill {
+  fill: $ghost-white;
+}
+
+@media (min-width: 376px) {
+  .dark-purple-bg {
+    height: 540px;
+  }
+  .light-purple-bg {
+    height: 920px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dark-purple-bg {
+    height: 540px;
+  }
+  .light-purple-bg {
+    height: 920px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dark-purple-bg {
+    height: 680px;
+  }
+  .light-purple-bg {
+    height: 975px;
+  }
+}

@@ -1,31 +1,40 @@
 @use "../abstracts" as *;
 
 .btn {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
   letter-spacing: -0.16px;
-  padding: 5px 0;
+  cursor: pointer;
 }
 
 .btn-primary {
-  border: 2px solid $eucaplyptus;
   background-color: $eucaplyptus;
+  border: 2px solid $eucaplyptus;
   color: $dark-purple;
+  transition: 0.2s ease-in;
 }
 
 .btn-primary:hover {
-  color: $eucaplyptus;
   background-color: $dark-purple;
+  color: $eucaplyptus;
 }
 
 .btn-secondary {
+  padding: 5px 0;
   border-bottom: 2px solid $eucaplyptus;
   color: $white;
+  transition: 0.2s ease-in;
 }
 
 .btn-secondary:hover {
   color: $eucaplyptus;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 18px;
+  }
 }

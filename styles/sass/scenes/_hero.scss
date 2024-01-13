@@ -1,33 +1,74 @@
 @use "../abstracts" as *;
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
   .hero-title {
-    color: $white;
     text-align: center;
-    padding-bottom: 40px;
+    padding: 0 5px;
+    margin-bottom: 40px;
 
     .highlight {
-      text-decoration: underline;
-      text-decoration-color: $eucaplyptus;
+      text-decoration-line: underline;
       text-decoration-thickness: 3px;
+      text-decoration-color: $eucaplyptus;
     }
   }
 
-  .cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .hero-btn {
+    width: 133px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
 
-    .cta-btn {
-      width: 133px;
-      height: 55px;
-      margin-bottom: 64px;
+  .phone {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 320px;
+    height: 184px;
+  }
+}
+
+@media (min-width: 375px) {
+  .hero {
+    .hero-title {
+      margin: 0 auto;
+      max-width: 400px;
+      margin-bottom: 40px;
     }
 
+    .hero-btn {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .hero-title {
+      max-width: 635px;
+    }
+    .hero-btn {
+      width: 161px;
+      height: 61px;
+    }
     .phone {
-      width: 320px;
-      height: 184px;
-      margin-bottom: 69px;
+      width: 514px;
+      height: 296px;
+      margin-bottom: 104px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .hero {
+    .phone {
+      width: 767px;
+      height: 441px;
     }
   }
 }

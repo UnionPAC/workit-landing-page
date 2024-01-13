@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 116px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+
+  .footer-logo {
+    width: 95px;
+    height: 25px;
+    margin-bottom: 80px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 24px;
+  }
+
+  .socials img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 375px) {
+  footer {
+    margin-bottom: 121px;
+
+    .socials {
+      display: flex;
+      gap: 32px;
+    }
+  }
+}

@@ -1,37 +1,102 @@
 @use "../abstracts" as *;
 
 .benefits {
-  text-align: center;
-
-  .benefit {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 172px;
 
   .benefit-number {
+    font-family: "Fraunces", serif;
     width: 48px;
     height: 46px;
-    border-radius: 30.5px;
     border: 1px solid $davys-grey;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $dark-purple;
-    font-family: "Fraunces";
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
+    font-style: normal;
     line-height: 36px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 24px;
-  }
-
-  .benefit-title {
-    margin-bottom: 16px;
     color: $dark-purple;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 20px;
   }
 
-  .benefit-description {
-    color: $davys-grey;
+  .benefit-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .benefit-title {
+      color: $dark-purple;
+      margin-bottom: 16px;
+    }
+
+    .benefit-description {
+      margin-bottom: 40px;
+      line-height: 28px;
+      color: $davys-grey;
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 376px) {
+  .benefits {
+    max-width: 573px;
+    margin: auto;
+    margin-bottom: 14rem;
+
+    .benefit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .benefit-content {
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 32px;
+      padding: 0 10px;
+      text-align: left;
+    }
+
+    .benefit-description {
+      margin-bottom: 48px;
+      max-width: 493px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .benefits {
+    max-width: 1114px;
+    margin: 0 auto;
+    margin-bottom: 16rem;
+
+    .benefit-content {
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+
+      .benefit-description {
+        text-align:  center;
+      }
+    }
+  }
+
+  .benefits ul {
+    display: flex;
+  }
+
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
