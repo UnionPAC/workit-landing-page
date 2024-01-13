@@ -49,17 +49,28 @@
       align-self: flex-end;
       text-align: left;
       margin-bottom: 80px;
-      padding: 0 64px;
+      padding: 0 60px;
+      position: relative;
 
       .message-title {
         margin-bottom: 24px;
-        margin-top: 32px;
+        margin-top: 52px;
+      }
+
+      .bg-pattern-3 {
+        z-index: 30;
+        display: block;
+        position: absolute;
+        top: 280px;
+        right: 20px;
+        height: 193px;
+        width: 193px;
       }
     }
     button {
       width: 190px;
       height: 61px;
-      margin-bottom: 32px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -81,6 +92,12 @@
       }
       .message-content {
         margin-bottom: 32px;
+      }
+      .bg-pattern-3 {
+        top: 220px;
+        right: 90px;
+        height: 213px;
+        width: 213px;
       }
     }
     button {

@@ -125,12 +125,32 @@ body {
     height: 920px;
   }
 }
+.bg-pattern-1,
+.bg-pattern-2,
+.bg-pattern-3 {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .dark-purple-bg {
     height: 540px;
   }
   .light-purple-bg {
     height: 920px;
+  }
+  .bg-pattern-1,
+  .bg-pattern-2 {
+    z-index: 30;
+    display: block;
+    position: absolute;
+  }
+  .bg-pattern-1 {
+    top: 90px;
+    left: -228px;
+  }
+  .bg-pattern-2 {
+    top: 260px;
+    right: -100px;
   }
 }
 @media (min-width: 1440px) {
@@ -139,6 +159,14 @@ body {
   }
   .light-purple-bg {
     height: 975px;
+  }
+  .bg-pattern-1 {
+    top: 90px;
+    left: -140px;
+  }
+  .bg-pattern-2 {
+    top: 260px;
+    right: -60px;
   }
 }
 h1,
@@ -476,16 +504,26 @@ footer .socials img {
     align-self: flex-end;
     text-align: left;
     margin-bottom: 80px;
-    padding: 0 64px;
+    padding: 0 60px;
+    position: relative;
   }
   .founder-message .message-container .message-title {
     margin-bottom: 24px;
-    margin-top: 32px;
+    margin-top: 52px;
+  }
+  .founder-message .message-container .bg-pattern-3 {
+    z-index: 30;
+    display: block;
+    position: absolute;
+    top: 280px;
+    right: 20px;
+    height: 193px;
+    width: 193px;
   }
   .founder-message button {
     width: 190px;
     height: 61px;
-    margin-bottom: 32px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1440px) {
@@ -506,6 +544,12 @@ footer .socials img {
   }
   .founder-message .message-container .message-content {
     margin-bottom: 32px;
+  }
+  .founder-message .message-container .bg-pattern-3 {
+    top: 220px;
+    right: 90px;
+    height: 213px;
+    width: 213px;
   }
   .founder-message button {
     margin-bottom: 64px;

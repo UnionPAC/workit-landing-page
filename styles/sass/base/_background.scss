@@ -68,12 +68,35 @@
   }
 }
 
+.bg-pattern-1,
+.bg-pattern-2,
+.bg-pattern-3 {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .dark-purple-bg {
     height: 540px;
   }
   .light-purple-bg {
     height: 920px;
+  }
+
+  .bg-pattern-1,
+  .bg-pattern-2 {
+    z-index: 30;
+    display: block;
+    position: absolute;
+  }
+
+  .bg-pattern-1 {
+    top: 90px;
+    left: -228px;
+  }
+
+  .bg-pattern-2 {
+    top: 260px;
+    right: -100px;
   }
 }
 
@@ -83,5 +106,15 @@
   }
   .light-purple-bg {
     height: 975px;
+  }
+
+  .bg-pattern-1 {
+    top: 90px;
+    left: -140px;
+  }
+
+  .bg-pattern-2 {
+    top: 260px;
+    right: -60px;
   }
 }
